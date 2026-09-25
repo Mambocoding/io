@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.185",
-    "publishedAt":  "2026-09-25T13:21:31Z",
-    "notes":  "## 0.2.185\n\nThe open article scrolls in its own column beside the list at desk width, one action bar is drawn\nwhile it is open, and a long line in an article body wraps instead of widening the page (a stylesheet\nchange; nothing to migrate or configure).\n\nowes: none\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.185"
+    "version":  "0.2.189",
+    "publishedAt":  "2026-09-25T14:27:56Z",
+    "notes":  "## 0.2.189\n\nThe panel\u0027s account row under the brand names the person and nothing else: the roles suffix\n(`(admin)`, `(updater)`) is gone from every page, and Settings → Users still shows each account\u0027s\nroles (a rendering change; nothing to migrate or configure).\n\nThe build declares the browser variable the layout test reads as an input of every test task, so a\nrun without it is no longer reported up-to-date (a build change; nothing to migrate or configure).\n\nowes: none\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.189"
 }
