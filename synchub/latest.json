@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.191",
-    "publishedAt":  "2026-09-25T15:28:16Z",
-    "notes":  "## 0.2.191\n\nOpening an unread article beside the list no longer paints a second copy of the page across it: a\nrequest htmx sends is now answered as a browser\u0027s, so the auto-mark on load and the read, star and\nsave buttons swap in their own button instead of a whole page, and so does the note editor\u0027s save.\nEvery boosted form in Settings, Administration, backup, devices and sign-in now gets the redirect a\nplain form gets, so an error shows and a success is confirmed. A caller that sends neither\n`Accept: text/html` nor `HX-Request` gets the same answers as before (a behaviour fix; nothing to\nmigrate or configure).\n\nowes: none\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.191"
+    "version":  "0.2.193",
+    "publishedAt":  "2026-09-25T16:07:38Z",
+    "notes":  "## 0.2.193\n\nThe article open beside the list follows the Scrollbar setting: hidden hides its bar, and visible\ndraws the thin outline-coloured thumb the side panel has, with the article\u0027s header no longer under it\n(a display fix; nothing to migrate or configure).\n\nowes: none\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.193"
 }
