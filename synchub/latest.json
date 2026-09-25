@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.193",
-    "publishedAt":  "2026-09-25T16:07:38Z",
-    "notes":  "## 0.2.193\n\nThe article open beside the list follows the Scrollbar setting: hidden hides its bar, and visible\ndraws the thin outline-coloured thumb the side panel has, with the article\u0027s header no longer under it\n(a display fix; nothing to migrate or configure).\n\nowes: none\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.193"
+    "version":  "0.2.194",
+    "publishedAt":  "2026-09-25T18:24:17Z",
+    "notes":  "## 0.2.194\n\nowes: **the home page now speaks for every app, and three new per-user collections carry the hearts.**\n`/home` shows one compact tile per enabled app (weather and stocks join feeds and notes), then a\n*Hearts* section with the cities, instruments and feeds each account marked with a heart — set on the\nphone (`weather.hearts`, `stocks.hearts`, `feed.hearts`: one `{\"v\":1}` record per item, keyed by that\nitem\u0027s own record id) or here (a *Heart* button on each row of *Manage places* and of the watchlist\neditor, and one in a single feed\u0027s `⋮` menu). No migration, no configuration key and nothing to\nexpose: the three names are ordinary per-user collections, so they sync, back up and restore with\neverything else, and a rollback leaves the records in the store for the older hub to ignore. Removing\na place or an instrument from the browser now also removes its heart in the same write. The hub\ngains one small read-only route, `GET /weather/art/{condition}.svg`, which serves the forecast\npictograms as images for the home cards. The image is built on DataCore 0.5.19 (from 0.5.18), whose\nnotes owe this hub nothing: `stocks.hearts` is read with the codec the phone shares. (specs/SPECHomeHearts.md)\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.194"
 }
