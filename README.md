@@ -34,6 +34,7 @@ privacy/<app>/index.md    that application's privacy policy, served at
 | --- | --- | --- |
 | [`privacy/feedscraper/`](privacy/feedscraper/index.md) | FeedScraper | `specs/SPECPrivacyPolicy.md` §3 |
 | [`privacy/filesmanager/`](privacy/filesmanager/index.md) | FilesManager | the in-app `privacy_body` |
+| [`privacy/flightscraper/`](privacy/flightscraper/index.md) | FlightScraper | the in-app `privacy_body` |
 | [`privacy/notesmanager/`](privacy/notesmanager/index.md) | NotesManager | the in-app `privacy_body` |
 | [`privacy/soundmaster/`](privacy/soundmaster/index.md) | SoundMaster | the in-app `privacy_body` |
 | [`privacy/stocksscraper/`](privacy/stocksscraper/index.md) | StocksScraper | the in-app `privacy_body` |
