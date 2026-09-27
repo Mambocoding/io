@@ -22,6 +22,29 @@ One directory per product, one file per product:
 | --- | --- | --- |
 | [`synchub/latest.json`](synchub/latest.json) | **SyncHub** — a server you run on your own machine, typically a home NAS, so your apps' data lives with you | `Mambocoding/SyncHub` *(private)* |
 
+And one more kind of public, non-secret text — each application's **privacy policy**, because the
+store needs a public address for it and the applications' own repositories are private:
+
+```
+privacy/<app>/index.md    that application's privacy policy, served at
+                          https://mambocoding.github.io/io/privacy/<app>/
+```
+
+| path | application | source |
+| --- | --- | --- |
+| [`privacy/feedscraper/`](privacy/feedscraper/index.md) | FeedScraper | `specs/SPECPrivacyPolicy.md` §3 |
+| [`privacy/filesmanager/`](privacy/filesmanager/index.md) | FilesManager | the in-app `privacy_body` |
+| [`privacy/notesmanager/`](privacy/notesmanager/index.md) | NotesManager | the in-app `privacy_body` |
+| [`privacy/soundmaster/`](privacy/soundmaster/index.md) | SoundMaster | the in-app `privacy_body` |
+| [`privacy/stocksscraper/`](privacy/stocksscraper/index.md) | StocksScraper | the in-app `privacy_body` |
+| [`privacy/tennisscraper/`](privacy/tennisscraper/index.md) | TennisScraper | the in-app `privacy_body` |
+| [`privacy/weatherscraper/`](privacy/weatherscraper/index.md) | WeatherScraper | the in-app `privacy_body` |
+
+Each page is a **verbatim copy** of the text its application owns, and its first line names the
+source commit. It is written by hand, the day that text changes (the application's release owes it),
+and never edited here first: if a page and its source disagree, the source is right. Nothing on a
+page loads or runs. The rule is AppShell's `specs/SPECPrivacyPages.md`.
+
 Nothing else belongs in this repository: no code, no configuration, no build output, and — rule 2
 below — no credentials.
 
@@ -84,5 +107,7 @@ product's path; from then on the workflow owns it.
 
 ---
 
-*Issues and discussion belong in each product's own repository. This one holds no code — only the
-answer to "is there a newer version, and what will it cost me?"*
+*Questions about a privacy policy belong in this repository's issues, the contact every policy
+names — the products' own repositories are private. Everything else belongs with each product.
+This one holds no code — only the answer to "is there a newer version, and what will it cost me?",
+and what each application does with your data.*
