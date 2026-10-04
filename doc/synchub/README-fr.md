@@ -1,6 +1,6 @@
 # SyncHub — guide d'utilisation
 
-*[English](README-en.md) · Français · [Deutsch](README-de.md) · [Nederlands](README-nl.md)*
+*[English](README-en.md) · Français · [Deutsch](README-de.md) · [Español](README-es.md) · [Nederlands](README-nl.md)*
 
 Rédigé pour SyncHub 0.2.216 (octobre 2026). Si ce guide et les pages du hub ne disent pas la même
 chose, c'est le hub qui a raison.

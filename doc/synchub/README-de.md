@@ -1,6 +1,6 @@
 # SyncHub — Benutzerhandbuch
 
-*[English](README-en.md) · [Français](README-fr.md) · Deutsch · [Nederlands](README-nl.md)*
+*[English](README-en.md) · [Français](README-fr.md) · Deutsch · [Español](README-es.md) · [Nederlands](README-nl.md)*
 
 Geschrieben für SyncHub 0.2.216 (Oktober 2026). Wenn dieses Handbuch und die Seiten des Hubs nicht
 übereinstimmen, hat der Hub recht.
