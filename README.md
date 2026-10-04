@@ -46,6 +46,17 @@ source commit. It is written by hand, the day that text changes (the application
 and never edited here first: if a page and its source disagree, the source is right. Nothing on a
 page loads or runs. The rule is AppShell's `specs/SPECPrivacyPages.md`.
 
+And each product's **user guide**, for the same reason — the people who install it cannot read the
+private repository:
+
+```
+doc/<product>/README-<lang>.md    that product's user guide, one file per language
+```
+
+| path | product | languages |
+| --- | --- | --- |
+| [`doc/synchub/`](doc/synchub/README-en.md) | SyncHub | [en](doc/synchub/README-en.md) · [fr](doc/synchub/README-fr.md) · [de](doc/synchub/README-de.md) · [nl](doc/synchub/README-nl.md) |
+
 Nothing else belongs in this repository: no code, no configuration, no build output, and — rule 2
 below — no credentials.
 
