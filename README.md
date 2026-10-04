@@ -55,7 +55,7 @@ doc/<product>/README-<lang>.md    that product's user guide, one file per langua
 
 | path | product | languages |
 | --- | --- | --- |
-| [`doc/synchub/`](doc/synchub/README-en.md) | SyncHub | [en](doc/synchub/README-en.md) · [fr](doc/synchub/README-fr.md) · [de](doc/synchub/README-de.md) · [nl](doc/synchub/README-nl.md) |
+| [`doc/synchub/`](doc/synchub/README-en.md) | SyncHub | [en](doc/synchub/README-en.md) · [fr](doc/synchub/README-fr.md) · [de](doc/synchub/README-de.md) · [es](doc/synchub/README-es.md) · [nl](doc/synchub/README-nl.md) |
 
 Nothing else belongs in this repository: no code, no configuration, no build output, and — rule 2
 below — no credentials.
