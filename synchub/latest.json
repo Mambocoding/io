@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.228",
-    "publishedAt":  "2026-10-06T09:07:28Z",
-    "notes":  "## 0.2.228\n\nowes: a Release now always can carry the engine zip (`synchub-engine-\u003cversion\u003e-windows-x64.zip` and a one-line `.sha256`): `release-local.ps1` attaches it last in `Registry` and gains `-Mode Engine -Tag v\u003cversion\u003e`, and a new `engine-windows.yml` (`workflow_dispatch`, `workflow_call`) does it for any tag; no hub, image, key or default changes, no migration, rollback safe.\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.228"
+    "version":  "0.2.229",
+    "publishedAt":  "2026-10-06T09:48:22Z",
+    "notes":  "## 0.2.229\n\nowes: the hub\u0027s broker loop now ends its reconnect wait at once when the administrator saves the form, replaces or clears the password, or confirms a fingerprint, and tries the new configuration immediately (an unchanged one still waits the 5 s to 5 min backoff); `GET /api/v1/broker` and the engine\u0027s broker state may now read the new token `refused_no_password` (a user name refused with no password stored; a client that switches on the token reads it like `refused_auth`), with its sentence on `/settings/broker` in five locales; no migration, key or default changes, rollback safe.\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.229"
 }
