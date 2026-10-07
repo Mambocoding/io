@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.241",
-    "publishedAt":  "2026-10-07T08:00:17Z",
-    "notes":  "## 0.2.241\n\nowes: none — the engine\u0027s `media.image` now also takes a row\u0027s `thumbnail` address (an `http` or `https` address is turned into the image key; a non-address key holding `/`, `?`, `#` or `%` is refused `-32602`), so an engine client draws timeline thumbnails; `engine/1` is unchanged and a key still works as before; no migration, rollback safe.\n\nowes: the shared feed record `feed.shared_feeds` gains one optional field, `iconUrlHash` (the key of the feed\u0027s stored icon, left out while none is stored; `v` stays `1`), and the engine\u0027s `feed.sources` rows gain `iconKey?` for `media.image`; an older phone or engine ignores the field, an icon resolved in a round reaches the record at the feed\u0027s next write, and every feed record is rewritten once as its icon is first written; no migration, rollback safe (an earlier image writes the record without the field).\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.241"
+    "version":  "0.2.242",
+    "publishedAt":  "2026-10-07T12:18:17Z",
+    "notes":  "## 0.2.242\n\nowes: none — the left panel\u0027s width is set by dragging its edge (`panelWidth`, 200–480 px, a new optional field of the per-person `shell.local_web` record that reads 264 when absent; new `POST /settings/web/panelWidth`; a *Panel width* row with *Reset* in Settings → Interface); every page that draws the panel for a signed-in person now loads `panel-sizer.js`, so those pages answer `script-src \u0027self\u0027 \u0027sha256-…\u0027` and `connect-src \u0027self\u0027` instead of `\u0027none\u0027` (the sign-in page, the setup wizard\u0027s frame and error pages keep `\u0027none\u0027`); no migration, no wire change, rollback safe (an earlier image ignores the field).\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.242"
 }
