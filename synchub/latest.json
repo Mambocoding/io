@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.240",
-    "publishedAt":  "2026-10-07T07:07:42Z",
-    "notes":  "## 0.2.240\n\nowes: none — the hub tolerates `HUB_URL`, `AUTOSTART` and `SETUP_DONE` in `synchub.conf` (the keys `:desktop` writes there), so an entry-tier install that wrote them boots instead of refusing on an unknown key; any other unknown file key and every unknown `SYNCHUB_*` variable still refuse; no migration, rollback safe.\n\nowes: none — *Where I left off* is a fourth startup view (`lastView`, FeedScraper\u0027s own `LAST_VIEW`), the hub remembers each person\u0027s last reader list in the new local `feed.local_web` collection (never on the wire), and bare `GET /` now answers `303` to the startup view instead of `301 /feeds`; no migration, no wire or CSP change, rollback safe — a browser that cached the old `301` for `/` may keep going to `/feeds` until its cache drops it.\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.240"
+    "version":  "0.2.241",
+    "publishedAt":  "2026-10-07T08:00:17Z",
+    "notes":  "## 0.2.241\n\nowes: none — the engine\u0027s `media.image` now also takes a row\u0027s `thumbnail` address (an `http` or `https` address is turned into the image key; a non-address key holding `/`, `?`, `#` or `%` is refused `-32602`), so an engine client draws timeline thumbnails; `engine/1` is unchanged and a key still works as before; no migration, rollback safe.\n\nowes: the shared feed record `feed.shared_feeds` gains one optional field, `iconUrlHash` (the key of the feed\u0027s stored icon, left out while none is stored; `v` stays `1`), and the engine\u0027s `feed.sources` rows gain `iconKey?` for `media.image`; an older phone or engine ignores the field, an icon resolved in a round reaches the record at the feed\u0027s next write, and every feed record is rewritten once as its icon is first written; no migration, rollback safe (an earlier image writes the record without the field).\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.241"
 }
