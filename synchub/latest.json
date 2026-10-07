@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.237",
-    "publishedAt":  "2026-10-06T16:55:58Z",
-    "notes":  "## 0.2.237\n\nowes: none — marked feeds, cities and instruments are called *favourites* in the five locales (words only: keys, routes and the `*.hearts` collections keep their names), and a single feed\u0027s favourite toggle moves from the `⋮` view panel into the header beside the unread counter, so `POST /feeds/source/{id}/heart` and `…/unheart` now redirect to the bare feed path (no `?view=open`); no route, record, CSP or wire change, no migration, rollback safe.\n\nowes: none — *Manage watchlist* (`/stocks/watchlist`) is rebuilt as category sections of rows with a `⋮` per row, and every stocks board layout and the instrument page draw a labelled kind icon (twelve new `stocks.*` catalogue keys in five locales); moving an instrument now swaps it with its neighbour within the same category only (the stored `sortOrder` values are unchanged in shape, no migration); no route, record, CSP or wire change, rollback safe.\n",
-    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.237"
+    "version":  "0.2.240",
+    "publishedAt":  "2026-10-07T07:07:42Z",
+    "notes":  "## 0.2.240\n\nowes: none — the hub tolerates `HUB_URL`, `AUTOSTART` and `SETUP_DONE` in `synchub.conf` (the keys `:desktop` writes there), so an entry-tier install that wrote them boots instead of refusing on an unknown key; any other unknown file key and every unknown `SYNCHUB_*` variable still refuse; no migration, rollback safe.\n\nowes: none — *Where I left off* is a fourth startup view (`lastView`, FeedScraper\u0027s own `LAST_VIEW`), the hub remembers each person\u0027s last reader list in the new local `feed.local_web` collection (never on the wire), and bare `GET /` now answers `303` to the startup view instead of `301 /feeds`; no migration, no wire or CSP change, rollback safe — a browser that cached the old `301` for `/` may keep going to `/feeds` until its cache drops it.\n",
+    "releaseUrl":  "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.240"
 }
