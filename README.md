@@ -47,7 +47,8 @@ and never edited here first: if a page and its source disagree, the source is ri
 page loads or runs. The rule is AppShell's `specs/SPECPrivacyPages.md`.
 
 And each product's **user guide**, for the same reason — the people who install it cannot read the
-private repository:
+private repository — and because each application **carries its own copy**, readable offline from
+*About → Guide* (AppShell `specs/SPEC-94-in-app-guide.md`):
 
 ```
 doc/<product>/README-<lang>.md    that product's user guide, one file per language
@@ -55,7 +56,38 @@ doc/<product>/README-<lang>.md    that product's user guide, one file per langua
 
 | path | product | languages |
 | --- | --- | --- |
+| [`doc/feedscraper/`](doc/feedscraper/README-en.md) | FeedScraper | [en](doc/feedscraper/README-en.md) · [fr](doc/feedscraper/README-fr.md) · [de](doc/feedscraper/README-de.md) · [es](doc/feedscraper/README-es.md) · [nl](doc/feedscraper/README-nl.md) |
+| [`doc/filesmanager/`](doc/filesmanager/README-en.md) | FilesManager | [en](doc/filesmanager/README-en.md) · [fr](doc/filesmanager/README-fr.md) · [de](doc/filesmanager/README-de.md) · [es](doc/filesmanager/README-es.md) · [nl](doc/filesmanager/README-nl.md) |
+| [`doc/flightscraper/`](doc/flightscraper/README-en.md) | FlightScraper | [en](doc/flightscraper/README-en.md) · [fr](doc/flightscraper/README-fr.md) · [de](doc/flightscraper/README-de.md) · [es](doc/flightscraper/README-es.md) · [nl](doc/flightscraper/README-nl.md) |
+| [`doc/notesmanager/`](doc/notesmanager/README-en.md) | NotesManager | [en](doc/notesmanager/README-en.md) · [fr](doc/notesmanager/README-fr.md) · [de](doc/notesmanager/README-de.md) · [es](doc/notesmanager/README-es.md) · [nl](doc/notesmanager/README-nl.md) |
+| [`doc/soundmaster/`](doc/soundmaster/README-en.md) | SoundMaster | [en](doc/soundmaster/README-en.md) · [fr](doc/soundmaster/README-fr.md) · [de](doc/soundmaster/README-de.md) · [es](doc/soundmaster/README-es.md) · [nl](doc/soundmaster/README-nl.md) |
+| [`doc/stocksscraper/`](doc/stocksscraper/README-en.md) | StocksScraper | [en](doc/stocksscraper/README-en.md) · [fr](doc/stocksscraper/README-fr.md) · [de](doc/stocksscraper/README-de.md) · [es](doc/stocksscraper/README-es.md) · [nl](doc/stocksscraper/README-nl.md) |
 | [`doc/synchub/`](doc/synchub/README-en.md) | SyncHub | [en](doc/synchub/README-en.md) · [fr](doc/synchub/README-fr.md) · [de](doc/synchub/README-de.md) · [es](doc/synchub/README-es.md) · [nl](doc/synchub/README-nl.md) |
+| [`doc/tennisscraper/`](doc/tennisscraper/README-en.md) | TennisScraper | [en](doc/tennisscraper/README-en.md) · [fr](doc/tennisscraper/README-fr.md) · [de](doc/tennisscraper/README-de.md) · [es](doc/tennisscraper/README-es.md) · [nl](doc/tennisscraper/README-nl.md) |
+| [`doc/weatherscraper/`](doc/weatherscraper/README-en.md) | WeatherScraper | [en](doc/weatherscraper/README-en.md) · [fr](doc/weatherscraper/README-fr.md) · [de](doc/weatherscraper/README-de.md) · [es](doc/weatherscraper/README-es.md) · [nl](doc/weatherscraper/README-nl.md) |
+
+**This is where a guide is written.** Unlike a privacy page, the guide's source is here: each
+application's release copies the files into its own build, verbatim, the first line naming the commit
+it copied (`<!-- source: Mambocoding/io doc/<app>/README-<lang>.md @ <commit> -->`). Nothing is fetched
+at runtime. A change to an application that leaves its guide behind owes an `owes:` line in that
+application's release notes.
+
+**What a guide file is**, so that an application can read it (AppShell SPEC-94 §G3):
+
+1. `# <Product> — <user guide>`, then the language bar (`*English · [Français](README-fr.md) · …*`,
+   the current language unlinked), then one line *Written for <Product> <version> (<month year>)*, then
+   `---`.
+2. One `##` heading per chapter, numbered (`## 3. Pairing a phone`); `###` for sections inside it.
+   Chapters are separated by `---`.
+3. Markdown only from this subset: paragraphs, `-` and `1.` lists (one nested level), `>` quotes,
+   fenced code, `|` tables, `**bold**`, `*italic*`, `` `code` ``. **No images.**
+4. Links only to a heading of the same file (`[section 7](#7-folder-sync)`, the GitHub anchor) or to
+   one of the application's screens (`[Settings](app:settings)`); an application turns the names it
+   knows into links and shows the others as text. No link out of the application.
+5. English is required; `fr`, `de`, `es`, `nl` follow it chapter for chapter (same numbering). A
+   missing language falls back to English in the application, and says so.
+6. The brand rule of this portfolio applies to every word: a guide names what the user sees and does,
+   never a third party's product, site or service.
 
 Nothing else belongs in this repository: no code, no configuration, no build output, and — rule 2
 below — no credentials.
@@ -119,7 +151,7 @@ product's path; from then on the workflow owns it.
 
 ---
 
-*Questions about a privacy policy belong in this repository's issues, the contact every policy
-names — the products' own repositories are private. Everything else belongs with each product.
+*Questions about a privacy policy or a guide belong in this repository's issues, the contact every
+policy names — the products' own repositories are private. Everything else belongs with each product.
 This one holds no code — only the answer to "is there a newer version, and what will it cost me?",
-and what each application does with your data.*
+what each application does with your data, and how to use it.*
