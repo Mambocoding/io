@@ -221,14 +221,14 @@ d'autre sur Internet.
 
 ### 6.2 L'installer
 
-**Windows** (Edge, Chrome)
+**Windows** — pour tout navigateur qui utilise la liste de certificats du système
 1. Double-cliquez sur `synchub-ca.crt` → **Installer le certificat…**
 2. Choisissez **Utilisateur actuel** → **Suivant**.
 3. Choisissez **Placer tous les certificats dans le magasin suivant** → **Parcourir…** →
    **Autorités de certification racines de confiance** → **OK** → **Suivant** → **Terminer**.
 4. Confirmez l'avertissement de sécurité par **Oui**, puis fermez et rouvrez le navigateur.
 
-**macOS** (Safari, Chrome)
+**macOS** — pour tout navigateur qui utilise la liste de certificats du système
 1. Double-cliquez sur `synchub-ca.crt` : le Trousseau d'accès s'ouvre et l'ajoute au trousseau
    *session*.
 2. Double-cliquez sur le certificat *SyncHub Local CA* → **Se fier** → *Lors de l'utilisation de ce
@@ -241,12 +241,14 @@ d'autre sur Internet.
 3. Les noms de menus varient un peu selon les fabricants : cherchez « certificat » dans les
    paramètres.
 
-**Linux** (Chrome, Chromium) — **Paramètres → Confidentialité et sécurité → Sécurité → Gérer les
-certificats**, importez le fichier comme **autorité** de confiance.
+**Linux** — dans les réglages de certificats de votre navigateur (souvent **Paramètres →
+Confidentialité et sécurité → Sécurité → Gérer les certificats**), importez le fichier comme
+**autorité** de confiance.
 
-**Firefox** (tous systèmes) a sa propre liste — **Paramètres → Vie privée et sécurité → Certificats
-→ Afficher les certificats… → Autorités → Importer…**, puis cochez **Confirmer cette AC pour
-identifier des sites web**.
+**Un navigateur qui garde sa propre liste de certificats** (sur tout système) ignore les étapes
+ci-dessus — dans ses réglages de certificats (souvent **Paramètres → Vie privée et sécurité →
+Certificats → Afficher les certificats… → Autorités → Importer…**), importez le fichier, puis cochez
+**Confirmer cette AC pour identifier des sites web**.
 
 Rouvrez ensuite `https://synchub.local:8443` : le cadenas est là.
 

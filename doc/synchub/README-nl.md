@@ -215,14 +215,14 @@ voor niets anders op internet.
 
 ### 6.2 Installeren
 
-**Windows** (Edge, Chrome)
+**Windows** — voor elke browser die de certificatenlijst van het systeem gebruikt
 1. Dubbelklik op `synchub-ca.crt` → **Certificaat installeren…**
 2. Kies **Huidige gebruiker** → **Volgende**.
 3. Kies **Alle certificaten in het onderstaande archief opslaan** → **Bladeren…** →
    **Vertrouwde basiscertificeringsinstanties** → **OK** → **Volgende** → **Voltooien**.
 4. Bevestig de beveiligingswaarschuwing met **Ja** en sluit en open daarna de browser opnieuw.
 
-**macOS** (Safari, Chrome)
+**macOS** — voor elke browser die de certificatenlijst van het systeem gebruikt
 1. Dubbelklik op `synchub-ca.crt`: Sleutelhangertoegang opent en voegt het toe aan de sleutelhanger
    *inlogsessie*.
 2. Dubbelklik op het certificaat *SyncHub Local CA* → **Vertrouw** → *Bij gebruik van dit
@@ -235,12 +235,14 @@ voor niets anders op internet.
 2. Bevestig de waarschuwing en kies `synchub-ca.crt` uit uw downloads.
 3. De menunamen verschillen iets per fabrikant; zoek in de instellingen naar "certificaat".
 
-**Linux** (Chrome, Chromium) — **Instellingen → Privacy en beveiliging → Beveiliging → Certificaten
-beheren**, importeer het bestand als vertrouwde **certificeringsinstantie**.
+**Linux** — in de certificaatinstellingen van uw browser (vaak **Instellingen → Privacy en
+beveiliging → Beveiliging → Certificaten beheren**), importeer het bestand als vertrouwde
+**certificeringsinstantie**.
 
-**Firefox** (alle systemen) houdt een eigen lijst bij — **Instellingen → Privacy & Beveiliging →
-Certificaten → Certificaten bekijken… → Organisaties → Importeren…**, vink daarna **Deze CA
-vertrouwen voor het identificeren van websites** aan.
+**Een browser met een eigen certificatenlijst** (op elk systeem) negeert de stappen hierboven — in
+zijn certificaatinstellingen (vaak **Instellingen → Privacy & Beveiliging → Certificaten →
+Certificaten bekijken… → Organisaties → Importeren…**), importeer het bestand en vink daarna **Deze
+CA vertrouwen voor het identificeren van websites** aan.
 
 Open daarna `https://synchub.local:8443` opnieuw: het slotje is er.
 

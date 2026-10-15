@@ -213,14 +213,14 @@ nada más en Internet.
 
 ### 6.2 Instalarlo
 
-**Windows** (Edge, Chrome)
+**Windows** — para todo navegador que use la lista de certificados del sistema
 1. Haga doble clic en `synchub-ca.crt` → **Instalar certificado…**
 2. Elija **Usuario actual** → **Siguiente**.
 3. Elija **Colocar todos los certificados en el siguiente almacén** → **Examinar…** →
    **Entidades de certificación raíz de confianza** → **Aceptar** → **Siguiente** → **Finalizar**.
 4. Confirme el aviso de seguridad con **Sí** y cierre y vuelva a abrir el navegador.
 
-**macOS** (Safari, Chrome)
+**macOS** — para todo navegador que use la lista de certificados del sistema
 1. Haga doble clic en `synchub-ca.crt`: se abre Acceso a Llaveros y lo añade al llavero *inicio de
    sesión*.
 2. Haga doble clic en el certificado *SyncHub Local CA* → **Confiar** → *Al utilizar este
@@ -232,12 +232,13 @@ nada más en Internet.
 2. Confirme el aviso y elija `synchub-ca.crt` en sus descargas.
 3. Los nombres de los menús varían algo según el fabricante; busque "certificado" en los ajustes.
 
-**Linux** (Chrome, Chromium) — **Configuración → Privacidad y seguridad → Seguridad → Gestionar
-certificados**, importe el archivo como **entidad** de confianza.
+**Linux** — en los ajustes de certificados de su navegador (a menudo **Configuración → Privacidad y
+seguridad → Seguridad → Gestionar certificados**), importe el archivo como **entidad** de confianza.
 
-**Firefox** (todos los sistemas) tiene su propia lista — **Ajustes → Privacidad & Seguridad →
-Certificados → Ver certificados… → Autoridades → Importar…**, y marque **Confiar en esta CA para
-identificar sitios web**.
+**Un navegador con su propia lista de certificados** (en cualquier sistema) ignora los pasos
+anteriores — en sus ajustes de certificados (a menudo **Ajustes → Privacidad & Seguridad →
+Certificados → Ver certificados… → Autoridades → Importar…**), importe el archivo y marque **Confiar
+en esta CA para identificar sitios web**.
 
 Después vuelva a abrir `https://synchub.local:8443`: el candado está ahí.
 

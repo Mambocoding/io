@@ -209,14 +209,14 @@ else on the internet.
 
 ### 6.2 Install it
 
-**Windows** (Edge, Chrome)
+**Windows** — for every browser that uses the system's certificate list
 1. Double-click `synchub-ca.crt` → **Install Certificate…**
 2. Choose **Current User** → **Next**.
 3. Choose **Place all certificates in the following store** → **Browse…** →
    **Trusted Root Certification Authorities** → **OK** → **Next** → **Finish**.
 4. Confirm the security warning with **Yes**, then close and reopen the browser.
 
-**macOS** (Safari, Chrome)
+**macOS** — for every browser that uses the system's certificate list
 1. Double-click `synchub-ca.crt`: Keychain Access opens and adds it to the *login* keychain.
 2. Double-click the certificate *SyncHub Local CA* → **Trust** → *When using this certificate*:
    **Always Trust**. Close the window and enter your password.
@@ -227,11 +227,12 @@ else on the internet.
 2. Confirm the warning and pick `synchub-ca.crt` from your downloads.
 3. Menu names vary slightly between phone makers; search the settings for "certificate".
 
-**Linux** (Chrome, Chromium) — **Settings → Privacy and security → Security → Manage
-certificates**, import the file as a trusted **authority**.
+**Linux** — in your browser's certificate settings (often **Settings → Privacy and security →
+Security → Manage certificates**), import the file as a trusted **authority**.
 
-**Firefox** (every system) keeps its own list — **Settings → Privacy & Security → Certificates →
-View Certificates… → Authorities → Import…**, then tick **Trust this CA to identify websites**.
+**A browser that keeps its own certificate list** (on every system) ignores the steps above — in its
+certificate settings (often **Settings → Privacy & Security → Certificates → View Certificates… →
+Authorities → Import…**), import the file, then tick **Trust this CA to identify websites**.
 
 Then open `https://synchub.local:8443` again: the padlock is there.
 
