@@ -216,14 +216,14 @@ Dieses Stammzertifikat kann nur für `synchub.local`, `localhost` und die Adress
 
 ### 6.2 Installieren
 
-**Windows** (Edge, Chrome)
+**Windows** — für jeden Browser, der die Zertifikatsliste des Systems nutzt
 1. Doppelklicken Sie auf `synchub-ca.crt` → **Zertifikat installieren…**
 2. Wählen Sie **Aktueller Benutzer** → **Weiter**.
 3. Wählen Sie **Alle Zertifikate in folgendem Speicher speichern** → **Durchsuchen…** →
    **Vertrauenswürdige Stammzertifizierungsstellen** → **OK** → **Weiter** → **Fertig stellen**.
 4. Bestätigen Sie die Sicherheitswarnung mit **Ja**, schließen und öffnen Sie dann den Browser neu.
 
-**macOS** (Safari, Chrome)
+**macOS** — für jeden Browser, der die Zertifikatsliste des Systems nutzt
 1. Doppelklicken Sie auf `synchub-ca.crt`: Die Schlüsselbundverwaltung öffnet sich und fügt es dem
    Schlüsselbund *Anmeldung* hinzu.
 2. Doppelklicken Sie auf das Zertifikat *SyncHub Local CA* → **Vertrauen** → *Bei Verwendung dieses
@@ -237,12 +237,14 @@ Dieses Stammzertifikat kann nur für `synchub.local`, `localhost` und die Adress
 3. Die Menünamen unterscheiden sich je nach Hersteller etwas; suchen Sie in den Einstellungen nach
    „Zertifikat".
 
-**Linux** (Chrome, Chromium) — **Einstellungen → Datenschutz und Sicherheit → Sicherheit →
-Zertifikate verwalten**, die Datei als vertrauenswürdige **Zertifizierungsstelle** importieren.
+**Linux** — in den Zertifikatseinstellungen Ihres Browsers (oft **Einstellungen → Datenschutz und
+Sicherheit → Sicherheit → Zertifikate verwalten**) die Datei als vertrauenswürdige
+**Zertifizierungsstelle** importieren.
 
-**Firefox** (alle Systeme) führt eine eigene Liste — **Einstellungen → Datenschutz & Sicherheit →
-Zertifikate → Zertifikate anzeigen… → Zertifizierungsstellen → Importieren…**, dann **Dieser CA
-vertrauen, um Websites zu identifizieren** ankreuzen.
+**Ein Browser mit eigener Zertifikatsliste** (auf jedem System) ignoriert die Schritte oben — in
+seinen Zertifikatseinstellungen (oft **Einstellungen → Datenschutz & Sicherheit → Zertifikate →
+Zertifikate anzeigen… → Zertifizierungsstellen → Importieren…**) die Datei importieren, dann **Dieser
+CA vertrauen, um Websites zu identifizieren** ankreuzen.
 
 Öffnen Sie anschließend `https://synchub.local:8443` erneut: Das Schloss ist da.
 
