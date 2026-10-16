@@ -32,7 +32,7 @@ privacy/<app>/index.md    that application's privacy policy, served at
 
 | path | application | source |
 | --- | --- | --- |
-| [`privacy/feedscraper/`](privacy/feedscraper/index.md) | FeedScraper | `specs/SPECPrivacyPolicy.md` §3 |
+| [`privacy/feedscraper/`](privacy/feedscraper/index.md) | FeedScraper | `specs/SPEC-055-privacy-policy.md` §3 |
 | [`privacy/filesmanager/`](privacy/filesmanager/index.md) | FilesManager | the in-app `privacy_body` |
 | [`privacy/flightscraper/`](privacy/flightscraper/index.md) | FlightScraper | the in-app `privacy_body` |
 | [`privacy/notesmanager/`](privacy/notesmanager/index.md) | NotesManager | the in-app `privacy_body` |
@@ -44,11 +44,11 @@ privacy/<app>/index.md    that application's privacy policy, served at
 Each page is a **verbatim copy** of the text its application owns, and its first line names the
 source commit. It is written by hand, the day that text changes (the application's release owes it),
 and never edited here first: if a page and its source disagree, the source is right. Nothing on a
-page loads or runs. The rule is AppShell's `specs/SPECPrivacyPages.md`.
+page loads or runs. The rule is AppShell's `specs/SPEC-039-privacy-pages.md`.
 
 And each product's **user guide**, for the same reason — the people who install it cannot read the
 private repository — and because each application **carries its own copy**, readable offline from
-*About → Guide* (AppShell `specs/SPEC-94-in-app-guide.md`):
+*About → Guide* (AppShell `specs/SPEC-094-in-app-guide.md`):
 
 ```
 doc/<product>/README-<lang>.md    that product's user guide, one file per language
@@ -72,7 +72,7 @@ it copied (`<!-- source: Mambocoding/io doc/<app>/README-<lang>.md @ <commit> --
 at runtime. A change to an application that leaves its guide behind owes an `owes:` line in that
 application's release notes.
 
-**What a guide file is**, so that an application can read it (AppShell SPEC-94 §G3):
+**What a guide file is**, so that an application can read it (AppShell SPEC-094 §G3):
 
 1. `# <Product> — <user guide>`, then the language bar (`*English · [Français](README-fr.md) · …*`,
    the current language unlinked), then one line *Written for <Product> <version> (<month year>)*, then
