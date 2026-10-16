@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.264",
-    "publishedAt":  "2026-10-14T14:10:22Z",
-    "notes":  "## 0.2.264\n\nowes: SyncDesk — pin this release\u0027s engine zip (about 39 MB, `synchub-engine/` holding `synchub-engine.exe`, `app/`, `runtime/`, `ui-strings/` and `ui-geometry.json`), not v0.2.263\u0027s, whose zip holds only the last two and cannot be bundled; `:engine:appImage` now assembles the whole folder in one task, and the packaging step and `release-local.ps1` refuse a zip without the exe, `app/` or `runtime/` or under 10 MB (SPEC-190). No migration, no configuration key.\n",
-    "releaseUrl":  "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.264.md"
+    "version":  "0.2.268",
+    "publishedAt":  "2026-10-16T08:01:15Z",
+    "notes":  "## 0.2.268\n\nowes: nothing more for the accuracy test update — `SensorAccuracyTest` now asserts SPEC-195\u0027s covered-hours rule; no migration, key, wire change or default.\n\nowes: none — build and agent tooling: `tooling/` re-pinned v0.1.22 → v0.1.23 and the `preflight@` ref in `release.yml` follows (the interval\u0027s `release`/`finish` secrets move does not apply: this workflow is `DELIVERY=custom` and its checkouts already keep no credentials); `.claude/settings.json` gains the connector-write guard and loses the `find` allow rule; `syncprotocol` and `synccore` re-pinned 0.10.9 → 0.10.10 (SyncCore\u0027s interval moves `Refused(408)` and `Refused(429)` to `Unavailable`; nothing here matches either); the DataCore cores stay at 0.5.38: 0.5.39 makes the tennis scoreboard DTOs internal and returns `WireRecord?` from `SharedQuoteMapper.toRecord`, so `:app-tennis` and `:app-stocks` need code first.\n",
+    "releaseUrl":  "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.268.md"
 }
