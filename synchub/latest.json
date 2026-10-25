@@ -1,7 +1,7 @@
 {
-    "schema":  1,
-    "version":  "0.2.291",
-    "publishedAt":  "2026-10-25T14:47:07Z",
-    "notes":  "## 0.2.291\n\nowes: none — a hub whose stored `BIND` is an address no interface of the machine carries (checked once the 60 s network wait is over) now takes a usable `SYNCHUB_BIND` from `compose.yml`, or stops with one line naming the machine\u0027s addresses (SPEC-203). No migration, no new configuration key, no default changes.\n",
-    "releaseUrl":  "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.291.md"
+  "schema": 1,
+  "version": "0.2.292",
+  "publishedAt": "2026-10-25T16:02:58Z",
+  "notes": "## 0.2.292\n\nowes: none — the `tooling/` submodule re-pinned from v0.1.36 to v0.1.43, the `preflight@` and `finish@` refs already naming it; the interval owes this service nothing (the probes lines bind repositories with a `portfolio/probes.tsv` and WatchTower's runs, the rest is the masters' wording); build files only, no behaviour change.\n",
+  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.292.md"
 }
