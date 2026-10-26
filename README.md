@@ -132,7 +132,7 @@ below — no credentials.
   "version": "0.2.128",
   "publishedAt": "2026-09-20T07:10:09Z",
   "notes": "owes: a forward-only migration (V025, schema version 25) adds one table …",
-  "releaseUrl": "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.128"
+  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.128.md"
 }
 ```
 
