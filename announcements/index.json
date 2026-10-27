@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "announcements": [
+    {
+      "id": "Announcement20261027-1035",
+      "from": "2026-10-27T10:35Z",
+      "expires": "2026-11-26T10:35Z",
+      "apps": [
+        "all"
+      ],
+      "versions": {},
+      "languages": [
+        "en"
+      ],
+      "titles": {
+        "en": "TEst"
+      },
+      "images": 0
+    }
+  ]
+}
