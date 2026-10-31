@@ -1,11 +1,4 @@
-# IDE
-.idea/
+/.idea/
 *.iml
-
-# Local and agent files
-/commit.txt
-
-# OS cruft
 .DS_Store
-Thumbs.db
-desktop.ini
+/commit.txt
