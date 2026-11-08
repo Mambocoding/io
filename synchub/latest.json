@@ -1,7 +1,7 @@
 {
-  "schema": 1,
-  "version": "0.2.315",
-  "publishedAt": "2026-11-06T11:07:02Z",
-  "notes": "## 0.2.315\n\nowes: none — SyncCore moves from 0.10.35 to 0.10.39 and DataCore from 0.6.12 to 0.6.16 (intervals owe nothing), Tooling to v0.1.68 (PreToolUse matcher Bash|PowerShell); nothing to do.\n\nowes: none\n\nowes: none — the weather API's `POST /api/v1/weather/places/{id}/refresh` answers `200` with `{\"outcome\":\"ran\",\"ok\":…,\"error\":…}` or `{\"outcome\":\"notDue\",\"nextAt\":…}` instead of `204` (a place that is not the caller's stays a 404); a client that expected an empty `204` must read the body. No configuration key, migration or rollback concern.\n\nowes: none — the weather refresh answer is written with the API's own JSON encoder like every other route, so it no longer depends on content negotiation being installed; the body is unchanged.\n\nowes: none — the stocks API gains `POST /api/v1/stocks/refresh`, a person's refresh-now for their own watchlist's quotes (answers `{\"outcome\":\"ran\",\"ok\":…,\"error\":…}` or `{\"outcome\":\"notDue\",\"nextAt\":…}`; a failed quote can be retried by hand once a minute). A new route only: no configuration key, migration, wire collection or changed default.\n",
-  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.315.md"
+    "schema":  1,
+    "version":  "0.2.319",
+    "publishedAt":  "2026-11-08T17:57:57Z",
+    "notes":  "## 0.2.319\n\nowes: a new optional configuration key, `SYNCHUB_EXTRA_CA_FILE` (a PEM file path, empty by default): the certificate authority in it is trusted by the hub\u0027s outbound fetches beside the system\u0027s. Nothing to do unless an operator wants it; a path that is not a readable file stops the start.\n\nowes: none — the extra-CA trust store\u0027s source is reformatted to the lint rules, no behaviour change.\n\nowes: none — SyncCore moves from 0.10.39 to 0.10.40 and DataCore from 0.6.16 to 0.6.17 (intervals owe nothing), Tooling to v0.1.71; nothing to do.\n\nowes: none — the revoked-device engine test now polls for the revoked state instead of reading it once; a test-only change, nothing to do.\n",
+    "releaseUrl":  "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.319.md"
 }
