@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.327",
-    "publishedAt":  "2026-11-14T07:57:35Z",
-    "notes":  "## 0.2.327\n\nowes: none\n",
-    "releaseUrl":  "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.327.md"
+    "version":  "0.2.328",
+    "publishedAt":  "2026-11-16T07:29:02Z",
+    "notes":  "## 0.2.328\n\nowes: SyncDesk at its next re-pin — `uiModel` 33 adds the weather health row\u0027s `source` and the settings facts\u0027 `defaultRefreshHours` (SPEC-211); an older reader shows the bare place name and no default figure, and reads the plural round line from the hub\u0027s catalogue. Nothing else for an operator: no migration, key, wire collection or default changes.\n\nowes: none — SyncCore re-pinned from 0.10.46 to 0.10.49 and DataCore from 0.6.25 to 0.6.27 (their notes for 0.10.47 to 0.10.49 and 0.6.26 to 0.6.27 name no wire, key, migration or default change); Tooling from v0.1.77 to v0.1.88 (submodule, `preflight`, `finish` and `repin` action refs): nothing ships from it. Nothing to do.\n\nowes: none — test-only change (NotesOtherAccountRoutesTest, two accounts on the notes routes); no runtime behaviour, wire, key or default changes.\n\nowes: none — test-only change (WebDavTraversalTest, UnnamedBlobsTest, ReplicaMigrationsTest, the claim and replica migration proofs); no runtime behaviour, wire, key or default changes.\n\nowes: none — the client\u0027s and the desktop launcher\u0027s app-mode window is renamed `AppModeWindow` (a name by role, no runtime change: the same process launched with the same arguments); no wire, key, migration or default changes.\n",
+    "releaseUrl":  "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.328.md"
 }
