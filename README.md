@@ -26,13 +26,14 @@ And one more kind of public, non-secret text — each application's **privacy po
 store needs a public address for it and the applications' own repositories are private:
 
 ```
-privacy/<app>/index.md    that application's privacy policy, served at
-                          https://mambocoding.github.io/io/privacy/<app>/
+privacy/<app>/index.md          that application's privacy policy, served at
+                                https://mambocoding.github.io/io/privacy/<app>/
+privacy/<app>/<lang>/index.md   its translation (fr, de, es, nl), served at …/privacy/<app>/<lang>/
 ```
 
 | path | application | source |
 | --- | --- | --- |
-| [`privacy/feedscraper/`](privacy/feedscraper/index.md) | FeedScraper | `specs/SPEC-055-privacy-policy.md` §3 |
+| [`privacy/feedscraper/`](privacy/feedscraper/index.md) · [fr](privacy/feedscraper/fr/index.md) · [de](privacy/feedscraper/de/index.md) · [es](privacy/feedscraper/es/index.md) · [nl](privacy/feedscraper/nl/index.md) | FeedScraper | `specs/SPEC-055-privacy-policy.md`, its *The policy, verbatim* sections |
 | [`privacy/filesmanager/`](privacy/filesmanager/index.md) | FilesManager | the in-app `privacy_body` |
 | [`privacy/flightscraper/`](privacy/flightscraper/index.md) | FlightScraper | the in-app `privacy_body` |
 | [`privacy/notesmanager/`](privacy/notesmanager/index.md) | NotesManager | the in-app `privacy_body` |
