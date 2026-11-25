@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.2.358",
-  "publishedAt": "2026-11-24T15:35:02Z",
-  "notes": "## 0.2.358\n\nowes: none\n\nowes: none — re-pinned tooling 0.1.111 → 0.1.117\n\nowes: none — `synchub-server --test-hub --seed synthetic` writes a richer data set (several feeds in two categories with a paged timeline and read, starred and saved articles, notes of every kind, three weather places, one still collecting, three instruments with an alert and news); a test hub only, nothing for a hub, an image or an engine to do.\n",
-  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.358.md"
+  "version": "0.2.360",
+  "publishedAt": "2026-11-25T08:42:08Z",
+  "notes": "## 0.2.360\n\nowes: SyncDesk — the interface model step 41: `Confirm.detail` (a sentence shown under the confirmation's question) and the device and session confirmations' new wording (`confirm.deviceRevoke.*`, `confirm.sessionRevoke.*`, answers *Disconnect* / *Cancel*) in the next engine re-pin's `Hub.resw`\nowes: users — Settings → Devices and the account's sessions list devices and sessions by last seen, newest first, the never-seen last; a confirmation drawn in a table now wraps and names the device or session it disconnects\n\nowes: none — re-pinned tooling 0.1.121 → 0.1.122\n\nowes: none — re-pinned sync 0.10.58 → 0.10.59\n\nowes: none — re-pinned feed 0.6.39 → 0.6.40\n\nowes: none — re-pinned weather 0.6.39 → 0.6.40\n\nowes: none — re-pinned stocks 0.6.39 → 0.6.40\n\nowes: none — re-pinned notes 0.6.39 → 0.6.40\n\nowes: none — re-pinned tennis 0.6.39 → 0.6.40\n\nowes: none — re-pinned fetch 0.6.39 → 0.6.40\n\nowes: none — re-pinned tooling 0.1.117 → 0.1.121\n\nowes: SyncDesk — interface model 40 (the card's menu `NoteRow.menu`, note colours `colorSeed`, the colour names); the note card's menu holds Archive and Delete; notes show their colour; the colours have names\n\nowes: none — the test hub's synthetic seed (SPEC-220) holds note, label and item ids as UUIDs, a forecast, a sensor hour, a tennis news feed, one snapshot and the administrator's public test TOTP secret; a test start mode only, refused in the image\n",
+  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.360.md"
 }
