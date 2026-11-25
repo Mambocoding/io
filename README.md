@@ -26,13 +26,14 @@ And one more kind of public, non-secret text — each application's **privacy po
 store needs a public address for it and the applications' own repositories are private:
 
 ```
-privacy/<app>/index.md    that application's privacy policy, served at
-                          https://mambocoding.github.io/io/privacy/<app>/
+privacy/<app>/index.md          that application's privacy policy, served at
+                                https://mambocoding.github.io/io/privacy/<app>/
+privacy/<app>/<lang>/index.md   its translation (fr, de, es, nl), served at …/privacy/<app>/<lang>/
 ```
 
 | path | application | source |
 | --- | --- | --- |
-| [`privacy/feedscraper/`](privacy/feedscraper/index.md) | FeedScraper | `specs/SPEC-055-privacy-policy.md` §3 |
+| [`privacy/feedscraper/`](privacy/feedscraper/index.md) · [fr](privacy/feedscraper/fr/index.md) · [de](privacy/feedscraper/de/index.md) · [es](privacy/feedscraper/es/index.md) · [nl](privacy/feedscraper/nl/index.md) | FeedScraper | `specs/SPEC-055-privacy-policy.md`, its *The policy, verbatim* sections |
 | [`privacy/filesmanager/`](privacy/filesmanager/index.md) | FilesManager | the in-app `privacy_body` |
 | [`privacy/flightscraper/`](privacy/flightscraper/index.md) | FlightScraper | the in-app `privacy_body` |
 | [`privacy/notesmanager/`](privacy/notesmanager/index.md) | NotesManager | the in-app `privacy_body` |
@@ -89,6 +90,38 @@ application's release notes.
 6. The brand rule of this portfolio applies to every word: a guide names what the user sees and does,
    never a third party's product, site or service.
 
+And the portfolio's **announcements** — a short note the developer sends to the people who use the
+applications (a new feature, a change to come, a problem being fixed), shown inside each application
+it concerns (AppShell `specs/SPEC-107-announcements.md`):
+
+```
+announcements/index.json                          the list every reader reads first
+announcements/AnnouncementYYYYMMDD-HHMM-<lang>.md one file per language, en required
+announcements/AnnouncementYYYYMMDD-HHMM/<n>.<ext> its images (png, jpg, webp; ≤ 1 MiB; ≤ 8)
+```
+
+**Written by WatchTower only**, on the developer's *Publish*, as one commit on `dev`; **never edited
+afterwards** — a correction is a new announcement. Each language file ends with one HTML comment, the
+announcement's metadata, invisible wherever the Markdown is shown:
+
+```
+<!-- announcement
+apps: feedscraper, notesmanager
+title: Sync is back on every phone
+from: 2026-10-23T14:30Z
+expires: 2026-11-22T14:30Z
+versions: feedscraper >=1.4.0 <2.0.0
+-->
+```
+
+`apps` is `all` or the applications' identifiers (the folder names used here; `synchub` covers the
+hub, its desktop clients and the Windows client); `from` may be in the future (readers wait for it);
+after `expires` an announcement is never *new* again. `index.json` is the machine copy of those
+footers. The text may use what the guides use plus `https:` links and the announcement's own images —
+no HTML, no remote image. Read anonymously, at most once a day, at
+`https://raw.githubusercontent.com/Mambocoding/io/dev/announcements/` — a path compiled into the
+applications, so, like rule 3 below says of the feed, it never moves.
+
 Nothing else belongs in this repository: no code, no configuration, no build output, and — rule 2
 below — no credentials.
 
@@ -100,7 +133,7 @@ below — no credentials.
   "version": "0.2.128",
   "publishedAt": "2026-09-20T07:10:09Z",
   "notes": "owes: a forward-only migration (V025, schema version 25) adds one table …",
-  "releaseUrl": "https://github.com/Mambocoding/SyncHub/releases/tag/v0.2.128"
+  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.128.md"
 }
 ```
 
