@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.2.361",
-  "publishedAt": "2026-11-25T09:48:57Z",
-  "notes": "## 0.2.361\n\nowes: none — re-pinned tooling 0.1.122 → 0.1.124\nowes: none — re-pinned sync 0.10.59 → 0.10.61\nowes: none — re-pinned datacore 0.6.40 → 0.6.42 (feed, fetch, notes, stocks, tennis, weather: DataCore's interval owes none)\n",
-  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.361.md"
+  "version": "0.2.365",
+  "publishedAt": "2026-11-25T12:20:27Z",
+  "notes": "## 0.2.365\n\nowes: none — the wider synthetic seed (SPEC-220 §3) runs only under `--test-hub --seed synthetic`, which the image refuses; re-pinned tooling 0.1.122 → 0.1.124\nowes: none — a boosted swap that shows another page opens it at its top (SPEC-227: a script and the reader's article pane; no configuration, collection, migration or default)\n",
+  "releaseUrl": "https://github.com/Mambocoding/io/blob/main/synchub/notes/v0.2.365.md"
 }
